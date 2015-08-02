@@ -1,120 +1,283 @@
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0.5; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
 }
 
 
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0.5; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
 }
 
 
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0.5; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
 }
 
 
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0.5; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
 }
 
 
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0.5; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
 }
 
 
 @keyframes headeranimation {
-    from {background-color: #FFF;}
-    to {background-color: #4ddaa6;}
+    from {
+        background-color: #FFF;
+    }
+
+    to {
+        background-color: #64CAA5;
+    }
 }
 
 
 @-moz-keyframes headeranimation {
-    from {background-color: #FFF;}
-    to {background-color: #4ddaa6;}
+    from {
+        background-color: #FFF;
+    }
+
+    to {
+        background-color: #64CAA5;
+    }
 }
 
 
 @-webkit-keyframes headeranimation {
-    from {background-color: #FFF;}
-    to {background-color: #4ddaa6;}
+    from {
+        background-color: #FFF;
+    }
+
+    to {
+        background-color: #64CAA5;
+    }
 }
 
 
 @-ms-keyframes headeranimation {
-    from {background-color: #FFF;}
-    to {background-color: #01cb81;}
+    from {
+        background-color: #FFF;
+    }
+
+    to {
+        background-color: #64CAA5;
+    }
 }
 
 
 @-o-keyframes headeranimation {
-    from {background-color: #FFF;}
-    to {background-color: #4ddaa6;}
+    from {
+        background-color: #FFF;
+    }
+
+    to {
+        background-color: #64CAA5;
+    }
+}
+
+@media only screen and (min-device-width: 480px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        animation-name: fadein;
+        animation-duration: 3.5s;
+        -webkit-animation-duration: 3.5s;
+        -moz-animation-duration: 3.5s;
+        -ms-animation-duration: 3.5s;
+        -o-animation-duration: 3.5s;
+    }
+
+    .header {
+        background-color: #64CAA5;
+        margin: -20px -20px;
+        padding: 30px 30px;
+        animation-name: headeranimation;
+        animation-duration: 3.5s;
+        -webkit-animation-duration: 3.5s;
+        -moz-animation-duration: 3.5s;
+        -ms-animation-duration: 3.5s;
+        -o-animation-duration: 3.5s;
+    }
+
+       .navitem {
+            display: none;
+        }
+
+    .box-shadow-menu {
+        position: relative;
+        padding-left: 1.25em;
+    }
+
+        .box-shadow-menu:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.25em;
+            width: 1em;
+            height: 0.15em;
+            background: black;
+            box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
+        }
+
+
+    .header a:hover, .header a:active {
+        text-decoration: underline;
+    }
+
+    #article {
+        position: relative;
+        top: 0px;
+        padding: 50px;
+    }
+
+    q {
+        font-family: 'Abel', sans-serif;
+        font-size: 18pt;
+        font-style: italic;
+        font-weight: bolder;
+    }
 }
 
 
-body {
-    font-family: 'Open Sans', sans-serif;
+@media only screen and (min-device-width: 768px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        animation-name: fadein;
+        animation-duration: 3.5s;
+        -webkit-animation-duration: 3.5s;
+        -moz-animation-duration: 3.5s;
+        -ms-animation-duration: 3.5s;
+        -o-animation-duration: 3.5s;
+    }
+
+    .box-shadow-menu {
+        display: none;
+    }
+
+    .header {
+        background-color: #64CAA5;
+        margin: -20px -20px;
+        padding: 30px 30px;
+        animation-name: headeranimation;
+        animation-duration: 3.5s;
+        -webkit-animation-duration: 3.5s;
+        -moz-animation-duration: 3.5s;
+        -ms-animation-duration: 3.5s;
+        -o-animation-duration: 3.5s;
+    }
+
+        .navitem {
+            display: inline-block;
+            padding: 3px 30px;
+            color: #FFF;
+            font-weight: bold;
+        }
+
+            .header a:hover, .header a:active {
+                text-decoration: underline;
+            }
+
+    #article {
+        position: relative;
+        top: 0px;
+        padding: 50px;
+    }
+
+    q {
+        font-family: 'Abel', sans-serif;
+        font-size: 18pt;
+        font-style: italic;
+        font-weight: bolder;
+    }
+}
+
+
+@media only screen and (min-width : 1224px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        animation-name: fadein;
+        animation-duration: 3.5s;
+        -webkit-animation-duration: 3.5s;
+        -moz-animation-duration: 3.5s;
+        -ms-animation-duration: 3.5s;
+        -o-animation-duration: 3.5s;
+    }
+
+    .header {
+        background-color: #64CAA5;
+        margin: -20px -20px;
+        padding: 30px 30px;
+        animation-name: headeranimation;
+        animation-duration: 3.5s;
+        -webkit-animation-duration: 3.5s;
+        -moz-animation-duration: 3.5s;
+        -ms-animation-duration: 3.5s;
+        -o-animation-duration: 3.5s;
+    }
+
+
+        .navitem {
+            display: inline-block;
+            padding: 3px 30px;
+            color: #FFF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+    .box-shadow-menu {
+        display: none;
+    }
+
+    .header a:hover, .header a:active {
+        text-decoration: underline;
+    }
+
+    #article {
+        position: relative;
+        top: 0px;
+        padding: 50px;
+    }
+
+    q {
+        font-family: 'Abel', sans-serif;
+        font-size: 18pt;
+        font-style: italic;
+        font-weight: bolder;
+    }
 }
 
 a {
     text-decoration: none;
-}
-
-.header {
-    
-    background-color: #64CAA5;
-    margin: -20px -20px;
-    padding: 30px 30px;
-    animation-name: headeranimation;
-    animation-duration: 3.5s;
-    -webkit-animation-duration: 3.5s;
-       -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-         -o-animation-duration: 3.5s;
-    
-    
-}
-
-.header img{
-    height: auto;
-    width: 10%;
-    display: inline;
-    margin: 0 30px;
-    animation-name: fadein;
-    animation-duration: 3.5s;
-    -webkit-animation-duration: 3.5s;
-       -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-         -o-animation-duration: 3.5s;
-
-}
-
-.header a {
-    display: inline-block;
-    padding: 3px 30px;
-    color: #FFF;
-    font-weight: bold;
-}
-
-.header a:hover, .header a:active {
-    text-decoration: underline;
-}
-
-#article {
-    position: relative;
-    top: 0px;
-    padding: 50px;
-}
-
-q {
-    font-family: 'Abel', sans-serif;
-    font-size: 18pt;
-    font-style: italic;
-    font-weight: bolder;
 }
