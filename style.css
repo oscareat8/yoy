@@ -67,10 +67,10 @@ a {
 }
 
 .header {
-    background-color: #4ddaa6;
     
+    background-color: #6FE1B7;
     margin: -20px -20px;
-    padding: 20px 30px;
+    padding: 11px 30px;
     animation-name: headeranimation;
     animation-duration: 3.5s;
     -webkit-animation-duration: 3.5s;
@@ -81,14 +81,8 @@ a {
     
 }
 
-/*.header footer {
-    
-    font-size: 150px;
-    color: #FFF;
-}*/
-
 .header img{
-    height: 10%;
+    height: auto;
     width: 10%;
     display: inline;
     margin: 0 30px;
@@ -103,7 +97,7 @@ a {
 
 .header a {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 3px 30px;
     color: #FFF;
     font-weight: bold;
 }
