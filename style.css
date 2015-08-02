@@ -33,6 +33,31 @@
     to {background-color: #01cb81;}
 }
 
+
+@-moz-keyframes headeranimation {
+    from {background-color: #FFF;}
+    to {background-color: #01cb81;}
+}
+
+
+@-webkit-keyframes headeranimation {
+    from {background-color: #FFF;}
+    to {background-color: #01cb81;}
+}
+
+
+@-ms-keyframes headeranimation {
+    from {background-color: #FFF;}
+    to {background-color: #01cb81;}
+}
+
+
+@-o-keyframes headeranimation {
+    from {background-color: #FFF;}
+    to {background-color: #01cb81;}
+}
+
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
