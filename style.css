@@ -75,3 +75,8 @@ a {
     text-decoration: underline;
 }
 
+#article {
+    position: relative;
+    top: 0px;
+    padding: 50px;
+}
