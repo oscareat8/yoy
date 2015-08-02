@@ -101,16 +101,21 @@ a {
 
 }
 
-.header a {
+.navitem {
     display: inline-block;
-    padding: 0px 20px;
     color: #FFF;
     font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;
 }
 
-.header a:hover, .header a:active {
-    text-decoration: underline;
+.hvr-underline-reveal:before {
+    background: #4ddaa6
 }
+
+/*.header a:hover, .header a:active {
+    text-decoration: underline;
+}*/
 
 #article {
     position: relative;
