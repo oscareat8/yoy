@@ -30,19 +30,19 @@
 
 @keyframes headeranimation {
     from {background-color: #FFF;}
-    to {background-color: #01cb81;}
+    to {background-color: #4ddaa6;}
 }
 
 
 @-moz-keyframes headeranimation {
     from {background-color: #FFF;}
-    to {background-color: #01cb81;}
+    to {background-color: #4ddaa6;}
 }
 
 
 @-webkit-keyframes headeranimation {
     from {background-color: #FFF;}
-    to {background-color: #01cb81;}
+    to {background-color: #4ddaa6;}
 }
 
 
@@ -54,7 +54,7 @@
 
 @-o-keyframes headeranimation {
     from {background-color: #FFF;}
-    to {background-color: #01cb81;}
+    to {background-color: #4ddaa6;}
 }
 
 
@@ -67,7 +67,7 @@ a {
 }
 
 .header {
-    background-color: #01cb81;
+    background-color: #4ddaa6;
     
     margin: -20px -20px;
     padding: 20px 30px;
@@ -81,10 +81,24 @@ a {
     
 }
 
-.header footer {
+/*.header footer {
     
     font-size: 150px;
     color: #FFF;
+}*/
+
+.header img{
+    height: 10%;
+    width: 10%;
+    display: inline;
+    margin: 0 30px;
+    animation-name: fadein;
+    animation-duration: 3.5s;
+    -webkit-animation-duration: 3.5s;
+       -moz-animation-duration: 3.5s;
+        -ms-animation-duration: 3.5s;
+         -o-animation-duration: 3.5s;
+
 }
 
 .header ul li, .header a {
