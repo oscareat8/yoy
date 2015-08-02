@@ -101,13 +101,11 @@ a {
 
 }
 
-.header ul li, .header a {
-    display:inline-block;
+.header a {
+    display: inline-block;
     padding: 0px 20px;
     color: #FFF;
-    
-    
-    
+    font-weight: bold;
 }
 
 .header a:hover, .header a:active {
