@@ -101,21 +101,16 @@ a {
 
 }
 
-.navitem {
+.header a {
     display: inline-block;
+    padding: 0px 20px;
     color: #FFF;
     font-weight: bold;
-    text-decoration: none;
-    margin: 0 20px;
 }
 
-.hvr-underline-reveal:before {
-    background: #4ddaa6
-}
-
-/*.header a:hover, .header a:active {
+.header a:hover, .header a:active {
     text-decoration: underline;
-}*/
+}
 
 #article {
     position: relative;
