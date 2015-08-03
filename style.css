@@ -4,7 +4,7 @@
     }
 
     to {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
@@ -15,7 +15,7 @@
     }
 
     to {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
@@ -26,7 +26,7 @@
     }
 
     to {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
@@ -37,7 +37,7 @@
     }
 
     to {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
@@ -48,65 +48,9 @@
     }
 
     to {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
-
-
-@keyframes headeranimation {
-    from {
-        background-color: #FFF;
-    }
-
-    to {
-        background-color: #64CAA5;
-    }
-}
-
-
-@-moz-keyframes headeranimation {
-    from {
-        background-color: #FFF;
-    }
-
-    to {
-        background-color: #64CAA5;
-    }
-}
-
-
-@-webkit-keyframes headeranimation {
-    from {
-        background-color: #FFF;
-    }
-
-    to {
-        background-color: #64CAA5;
-    }
-}
-
-
-@-ms-keyframes headeranimation {
-    from {
-        background-color: #FFF;
-    }
-
-    to {
-        background-color: #64CAA5;
-    }
-}
-
-
-@-o-keyframes headeranimation {
-    from {
-        background-color: #FFF;
-    }
-
-    to {
-        background-color: #64CAA5;
-    }
-}
-
 
 
 
@@ -127,33 +71,37 @@ q {
     font-size: 18pt;
     font-style: italic;
     font-weight: bolder;
+    -webkit-animation: fadein 6s;
+       -moz-animation: fadein 6s;
+        -ms-animation: fadein 6s;
+         -o-animation: fadein 6s;
+            animation: fadein 6s;
     }
 
 
+.header {
+        background-color: #64CAA5;
+        margin: -20px -20px;
+        padding: 30px 30px;
+        -webkit-animation: fadein 5.5s;
+       -moz-animation: fadein 5.5s;
+        -ms-animation: fadein 5.5s;
+         -o-animation: fadein 5.5s;
+            animation: fadein 5.5s;
+        }
 
 
 
 
 
 
-
-
+/* DESKTOP ONLY CSS */
 
 
 @media only screen and (min-width : 1000px) {
    
 
-    .header {
-        background-color: #64CAA5;
-        margin: -20px -20px;
-        padding: 30px 30px;
-        animation-name: headeranimation;
-        animation-duration: 5s;
-        -webkit-animation-duration: 5s;
-        -moz-animation-duration: 5s;
-        -ms-animation-duration: 5s;
-        -o-animation-duration: 5s;
-    }
+    
 
     .box-shadow-menu {
         display: none;
@@ -198,7 +146,7 @@ q {
 
 
 
-
+/* MOBILE ONLY CSS */
 
 
 
@@ -208,56 +156,63 @@ q {
 @media only screen and (min-width: 200px) and (max-width: 1024px) {
 
    
-    .header {
-        background-color: #64CAA5;
-        margin: -20px -20px;
-        padding: 30px 30px;
-        animation-name: headeranimation;
-        animation-duration: 5s;
-        -webkit-animation-duration: 5s;
-        -moz-animation-duration: 5s;
-        -ms-animation-duration: 5s;
-        -o-animation-duration: 5s;
+    body {
+        margin: none;
+    } 
+    
+    .q {
+        font-size: 10pt;
     }
+    
 
-    .navitem {
+.navitem {
         display: none;
     }
+    
 
-    .box-shadow-menu {
+.box-shadow-menu {
         position: relative;
         padding-left: 1.25em;
     }
+    
 
-        .box-shadow-menu:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0.25em;
-            width: 1em;
-            height: 0.15em;
-            background: black;
-            box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
+    
+.box-shadow-menu:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.25em;
+        width: 1em;
+        height: 0.15em;
+        background: black;
+        box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
         }
+    
+    
 
-    #article {
+#article {
         position: relative;
         top: 0px;
         padding: 50px;
     }
+    
 
    
-
-    #mobilenav {
+#mobilenav {
         display: none;
         visibility: hidden;
         list-style-type: none;
     }
-    #mobilenav li a {
+    
+    
+    
+#mobilenav li a {
         padding: 3px 30px;
         color: #FFF;
         font-weight: bold;
     }
+    
+    
 }
 
 
@@ -267,22 +222,13 @@ q {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PRELOAD SCREEN */
+
+
+
+
+
+
 
 #loader-wrapper {
     position: fixed;
