@@ -28,8 +28,8 @@
     <script>
         function reveal() {
             var navlist = $('#mobilenav').css("display");
-            if (navlist == "none") {
-                navlist.show();
+            if ($('#mobilenav').css("display") == "none") {
+                $('#mobilenav').css("display", "inline");
             }
         }
     </script>

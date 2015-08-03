@@ -169,7 +169,6 @@
     }
         #mobilenav {
         display: none;
-        visibility: hidden;
     }
 
 }
@@ -288,7 +287,6 @@
 
     #mobilenav {
         display: none;
-        visibility: hidden;
     }
 
 }
