@@ -71,7 +71,7 @@ body {
 
 q {
     font-family: 'Abel', sans-serif;
-    font-size: 18pt;
+    font-size: 150%;
     font-style: italic;
     font-weight: bolder;
     -webkit-animation: fadein 6s;
@@ -96,14 +96,29 @@ q {
 
 
 
+.shapes {
+   
+    margin: 0px 150px;
+    padding: 0px 60
+    
+}
+
+.shapes1 {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
 
 
+}
 /* DESKTOP ONLY CSS */
 
 
 @media only screen and (min-width : 901px) {
    
-
+    q {
+        margin 70px 150px;
+    
+    }
 
     .box-shadow-menu {
         display: none;
