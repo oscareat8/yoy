@@ -111,12 +111,7 @@
 
     body {
         font-family: 'Open Sans', sans-serif;
-        animation-name: fadein;
-        animation-duration: 3.5s;
-        -webkit-animation-duration: 3.5s;
-        -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-        -o-animation-duration: 3.5s;
+        
     }
 
     .header {
@@ -124,11 +119,11 @@
         margin: -20px -20px;
         padding: 30px 30px;
         animation-name: headeranimation;
-        animation-duration: 3.5s;
-        -webkit-animation-duration: 3.5s;
-        -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-        -o-animation-duration: 3.5s;
+        animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+        -o-animation-duration: 5s;
     }
 
     .navitem {
@@ -180,12 +175,6 @@
 @media only screen and (min-width : 1025px) {
     body {
         font-family: 'Open Sans', sans-serif;
-        animation-name: fadein;
-        animation-duration: 3.5s;
-        -webkit-animation-duration: 3.5s;
-        -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-        -o-animation-duration: 3.5s;
     }
 
     .header {
@@ -193,11 +182,11 @@
         margin: -20px -20px;
         padding: 30px 30px;
         animation-name: headeranimation;
-        animation-duration: 3.5s;
-        -webkit-animation-duration: 3.5s;
-        -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-        -o-animation-duration: 3.5s;
+        animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+        -o-animation-duration: 5s;
     }
 
     .box-shadow-menu {
@@ -236,6 +225,12 @@
 a {
     text-decoration: none;
 }
+
+
+
+
+
+
 
 
 /* PRELOAD SCREEN */
