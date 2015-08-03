@@ -52,9 +52,41 @@
     }
 }
 
+#blog {
+    padding-top: 40px;
+    text-align: center;
+    color: #64CAA5;
+}
 
+.myButton {
+	background-color:#64CAA5;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:4px solid #47B26B;
+	display:inline-block;
+	
+	color:#ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size:20px;
+	padding:20px 55px;
+	text-decoration:none;
+	
+}
+.myButton:hover {
+	background-color:#83D5B7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
-
+donateq {
+    padding-top: 60px;
+    text-align: center;
+    margin: 40px;
+    
+}
 
 a {
     text-decoration: none;
@@ -96,20 +128,7 @@ q {
 
 
 
-.shapes {
-   
-    margin: 0px 150px;
-    padding: 0px 60
-    
-}
 
-.shapes1 {
-    border-radius: 50%;
-    width: 20%;
-    height: auto;
-
-
-}
 /* DESKTOP ONLY CSS */
 
 
