@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -25,70 +25,99 @@
     <meta name="theme-color" content="#ffffff">
     <title>Yoy | Professional Website Development</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script>
-        function reveal() {
-            if ($('#mobilenav').css("visibility") == "hidden") {
-                $('#mobilenav').css("visibility", "visible");
-                $('.header').animate({
-                    height: '200px'
-                });
-                $('#mobilenav').css("display", "inline");
+        var isOpened = false;
+        $(document).ready(function () {
+            // run test on initial page load
+            checkSize();
+            // run test on resize of the window
+            $(window).resize(checkSize);
+        });
 
-            } else {
+        //Function to the css rule
+        function checkSize() {
+            if (Modernizr.mq('screen and (max-width: 900px)') && isOpened) {
+                console.log('helo from 3');
+            }
+
+            else if (Modernizr.mq('screen and (max-width: 900px)') && !isOpened) {
+                //from desktop to mobile
+                $('#nav').css("visibility", "hidden");
+                $('#nav').css("display", "none");
+                console.log('helo from 2');
+            }
+
+            else if ($(Modernizr.mq('screen and (min-width : 901px)') && isOpened)) {
+                //from mobile to desktop
                 $('.header').animate({
                     height: '22px'
                 });
-                $('#mobilenav').css("visibility", "hidden");
-                $('#mobilenav').css("display", "none");
+                $('#nav').css("visibility", "visible");
+                $('#nav').css("display", "inline");
+                console.log('helo from 1');
+                isOpened = false;
+            }
+        }
+
+        function reveal() {
+            if ($('.box-shadow-menu').css("display") == "inline" && $('#nav').css("display") == "none") {
+                $('#nav').css("visibility", "visible");
+                $('.header').animate({
+                    height: '200px'
+                });
+                $('#nav').css("display", "inline");
+
+                isOpened = true;
+
+            } else if ($('#nav').css("visibility") == "visible") {
+                $('.header').animate({
+                    height: '22px'
+                });
+                $('#nav').css("visibility", "hidden");
+                $('#nav').css("display", "none");
+                isOpened = false;
             }
         }
     </script>
 </head>
 <body>
-    
-     <div id="loader-wrapper">
-			<div id="loader"></div>
 
-			<div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
 
-		</div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
     </div>
-    
-    
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="js/main.js"></script>
-    
-    
+
+
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+
+
     <div class="header">
-        <a href="#" class="navitem">HOME</a>
-        <a href="#" class="navitem">CAREERS</a>
-        <a href="#" class="navitem">BLOG</a>
-        <a href="#" class="navitem">DONATE</a>
-        <a href="#" class="navitem">GALLERY</a>
-        <a href="#" class="navitem">SHOP</a>
-        <a href="#" class="navitem">ABOUT US</a>
-        <center></center><a href="#menu" class="box-shadow-menu" onclick="reveal()"></a></center>
-        <ul id="mobilenav">
-            <li>
+        <a href="#menu" class="box-shadow-menu" onclick="reveal()"></a>
+        <ul id="nav">
+            <li class=".item">
                 <a href="#">HOME</a>
             </li>
-            <li>
+            <li class=".item">
                 <a href="#">CAREERS</a>
             </li>
-            <li>
+            <li class=".item">
                 <a href="#">BLOG</a>
             </li>
-            <li>
+            <li class=".item">
                 <a href="#">DONATE</a>
             </li>
-            <li>
+            <li class=".item">
                 <a href="#">GALLERY</a>
             </li>
-            <li>
+            <li class=".item">
                 <a href="#">SHOP</a>
             </li>
-            <li>
+            <li class=".item">
                 <a href="#">ABOUT US</a>
             </li>
         </ul>
