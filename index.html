@@ -27,9 +27,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
         function reveal() {
-            var navlist = $('#mobilenav').css("display");
-            if ($('#mobilenav').css("display") == "none") {
+            if ($('#mobilenav').css("visibility") == "hidden") {
+                $('#mobilenav').css("visibility", "visible");
+                $('.header').animate({
+                    height: '200px'
+                });
                 $('#mobilenav').css("display", "inline");
+
+            } else {
+                $('.header').animate({
+                    height: '22px'
+                });
+                $('#mobilenav').css("visibility", "hidden");
+                $('#mobilenav').css("display", "none");
             }
         }
     </script>
@@ -43,7 +53,7 @@
         <a href="#" class="navitem">GALLERY</a>
         <a href="#" class="navitem">SHOP</a>
         <a href="#" class="navitem">ABOUT US</a>
-        <a href="#menu" class="box-shadow-menu" onclick="reveal()"></a>
+        <center></center><a href="#menu" class="box-shadow-menu" onclick="reveal()"></a></center>
         <ul id="mobilenav">
             <li>
                 <a href="#">HOME</a>

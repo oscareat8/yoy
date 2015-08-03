@@ -107,7 +107,8 @@
     }
 }
 
-@media only screen and (min-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+
     body {
         font-family: 'Open Sans', sans-serif;
         animation-name: fadein;
@@ -150,68 +151,6 @@
             box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
         }
 
-
-    .header a:hover, .header a:active {
-        text-decoration: underline;
-    }
-
-    #article {
-        position: relative;
-        top: 0px;
-        padding: 50px;
-    }
-
-    q {
-        font-family: 'Abel', sans-serif;
-        font-size: 18pt;
-        font-style: italic;
-        font-weight: bolder;
-    }
-        #mobilenav {
-        display: none;
-    }
-
-}
-
-
-@media only screen and (min-device-width: 768px) {
-    body {
-        font-family: 'Open Sans', sans-serif;
-        animation-name: fadein;
-        animation-duration: 3.5s;
-        -webkit-animation-duration: 3.5s;
-        -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-        -o-animation-duration: 3.5s;
-    }
-
-    .box-shadow-menu {
-        display: none;
-    }
-
-    .header {
-        background-color: #64CAA5;
-        margin: -20px -20px;
-        padding: 30px 30px;
-        animation-name: headeranimation;
-        animation-duration: 3.5s;
-        -webkit-animation-duration: 3.5s;
-        -moz-animation-duration: 3.5s;
-        -ms-animation-duration: 3.5s;
-        -o-animation-duration: 3.5s;
-    }
-
-    .navitem {
-        display: inline-block;
-        padding: 3px 30px;
-        color: #FFF;
-        font-weight: bold;
-    }
-
-    .header a:hover, .header a:active {
-        text-decoration: underline;
-    }
-
     #article {
         position: relative;
         top: 0px;
@@ -227,11 +166,18 @@
 
     #mobilenav {
         display: none;
+        visibility: hidden;
+        list-style-type: none;
+    }
+    #mobilenav li a {
+        padding: 3px 30px;
+        color: #FFF;
+        font-weight: bold;
     }
 }
 
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1025px) {
     body {
         font-family: 'Open Sans', sans-serif;
         animation-name: fadein;
@@ -253,16 +199,6 @@
         -ms-animation-duration: 3.5s;
         -o-animation-duration: 3.5s;
     }
-
-
-    .navitem {
-        display: inline-block;
-        padding: 3px 30px;
-        color: #FFF;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
 
     .box-shadow-menu {
         display: none;
@@ -289,6 +225,12 @@
         display: none;
     }
 
+    .navitem {
+        display: inline-block;
+        padding: 3px 30px;
+        color: #FFF;
+        font-weight: bold;
+    }
 }
 
 a {
