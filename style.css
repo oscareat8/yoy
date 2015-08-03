@@ -107,13 +107,107 @@
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
 
-    body {
-        font-family: 'Open Sans', sans-serif;
-        
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
     }
 
+
+q {
+    font-family: 'Abel', sans-serif;
+    font-size: 18pt;
+    font-style: italic;
+    font-weight: bolder;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 1000px) {
+   
+
+    .header {
+        background-color: #64CAA5;
+        margin: -20px -20px;
+        padding: 30px 30px;
+        animation-name: headeranimation;
+        animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+        -o-animation-duration: 5s;
+    }
+
+    .box-shadow-menu {
+        display: none;
+    }
+
+    .header a:hover, .header a:active {
+        text-decoration: underline;
+    }
+
+    #article {
+        position: relative;
+        top: 0px;
+        padding: 50px;
+    }
+
+    
+
+    #mobilenav {
+        display: none;
+    }
+
+    .navitem {
+        display: inline-block;
+        padding: 3px 30px;
+        color: #FFF;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 1024px) {
+
+   
     .header {
         background-color: #64CAA5;
         margin: -20px -20px;
@@ -152,12 +246,7 @@
         padding: 50px;
     }
 
-    q {
-        font-family: 'Abel', sans-serif;
-        font-size: 18pt;
-        font-style: italic;
-        font-weight: bolder;
-    }
+   
 
     #mobilenav {
         display: none;
@@ -172,59 +261,19 @@
 }
 
 
-@media only screen and (min-width : 1025px) {
-    body {
-        font-family: 'Open Sans', sans-serif;
-    }
 
-    .header {
-        background-color: #64CAA5;
-        margin: -20px -20px;
-        padding: 30px 30px;
-        animation-name: headeranimation;
-        animation-duration: 5s;
-        -webkit-animation-duration: 5s;
-        -moz-animation-duration: 5s;
-        -ms-animation-duration: 5s;
-        -o-animation-duration: 5s;
-    }
 
-    .box-shadow-menu {
-        display: none;
-    }
 
-    .header a:hover, .header a:active {
-        text-decoration: underline;
-    }
 
-    #article {
-        position: relative;
-        top: 0px;
-        padding: 50px;
-    }
 
-    q {
-        font-family: 'Abel', sans-serif;
-        font-size: 18pt;
-        font-style: italic;
-        font-weight: bolder;
-    }
 
-    #mobilenav {
-        display: none;
-    }
 
-    .navitem {
-        display: inline-block;
-        padding: 3px 30px;
-        color: #FFF;
-        font-weight: bold;
-    }
-}
 
-a {
-    text-decoration: none;
-}
+
+
+
+
+
 
 
 
