@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -28,9 +28,11 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script>
         var isOpened = false;
+        var count = 0;
         $(document).ready(function () {
             // run test on initial page load
             checkSize();
+            startSlideShow();
             // run test on resize of the window
             $(window).resize(checkSize);
         });
@@ -79,6 +81,27 @@
                 isOpened = false;
             }
         }
+
+        function startSlideShow() {
+            $('#slideshow').children().eq(count).css("display", "inline");
+            console.log($('#slideshow').length);
+            setInterval(function () {
+                console.log("c: " + count);
+                if (count < $('#slideshow').length) {
+                    console.log("haldkjfalskdjf");
+                    $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
+                    $('#slideshow').children().eq(count).css("display", "none");
+                    ++count;
+                    $('#slideshow').children().eq(count).css("display", "inline");
+                } else {
+                    console.log("wtf");
+                    $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
+                    $('#slideshow').children().eq(count).css("display", "none");
+                    count = 0;
+                    $('#slideshow').children().eq(count).css("display", "inline");
+                }
+            }, 5000);
+        }
     </script>
 </head>
 <body>
@@ -123,18 +146,19 @@
         </ul>
     </div>
 
-    <article id="article">
-        <q>
-            We Are A Small Company, We Are Yoy. Our Staff of 6 Are Aiming To Create
-            Interactive And Complex Websites Using Javascript, PHP, Jquery, And The
-            Latest CSS3.
-        </q>
-      </article>
-    
-   
-
+    <div id="slideshow">
+        <div class="slide">
+            <article id="article">
+                "We Are A Small Company, We Are Yoy. Our Staff of 6 Are Aiming To Create
+                Interactive And Complex Websites Using Javascript, PHP, Jquery, And The
+                Latest CSS3."
+            </article>
+        </div>
+        <div class="slide">
+            <article id="article">
+                Lorem Ipsum
+            </article>
+        </div>
+    </div>
 </body>
-
-
-
 </html>
