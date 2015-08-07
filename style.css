@@ -106,12 +106,28 @@ article {
     font-size: 150%;
     font-style: italic;
     font-weight: bolder;
-    -webkit-animation: fadein 6s;
-    -moz-animation: fadein 6s;
-    -ms-animation: fadein 6s;
-    -o-animation: fadein 6s;
-    animation: fadein 6s;
+    text-align: center;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
+
+    article span {
+        color: white;
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        float: left;
+        position: absolute;
+        top: 300px;
+        margin-right: 250px;
+        z-index: 1;
+    }
 
 
 .header {
@@ -130,17 +146,49 @@ article {
     top: 100px;
     right: 100%;
     left: 0;
-    height: 500px;
+    height: 717px;
     width: 100vw;
     background: #64CAA5;
-    background: url('img/test.jpg');
-    background-position: center;
-    background-size: cover;
 }
+
 .slide {
     display: none;
     text-align: center;
+    justify-content: center;
 }
+
+.slideimg {
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+#left-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    float: left;
+}
+
+    #left-control > img {
+        display: block;
+        z-index: 1;
+    }
+
+#right-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    float: right;
+}
+
+    #right-control > img {
+        display: block;
+        z-index: 1;
+    }
+
 
 
 

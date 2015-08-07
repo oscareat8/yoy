@@ -28,7 +28,7 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script>
         var isOpened = false;
-        var count = 0;
+        var count = 2;
         $(document).ready(function () {
             // run test on initial page load
             checkSize();
@@ -83,22 +83,30 @@
         }
 
         function startSlideShow() {
-            $('#slideshow').children().eq(count).css("display", "inline");
-            console.log($('#slideshow').length);
+            $('#slideshow').children().eq(2).css("display", "inline");
+            console.log($('#slideshow').children());
             setInterval(function () {
                 console.log("c: " + count);
-                if (count < $('#slideshow').length) {
-                    console.log("haldkjfalskdjf");
-                    $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
-                    $('#slideshow').children().eq(count).css("display", "none");
-                    ++count;
-                    $('#slideshow').children().eq(count).css("display", "inline");
+                if ($('#slideshow').children().eq(count).hasClass("slide")) {
+                    console.log($('#slideshow').children().eq(count).attr("class"));
+                    if (count < $('#slideshow').children().length-1) {
+                        $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
+                        $('#slideshow').children().eq(count).css("display", "none");
+                        ++count;
+                        $('#slideshow').children().eq(count).css("display", "flex");
+                    } else {
+                        console.log("wtf");
+                        $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
+                        $('#slideshow').children().eq(count).css("display", "none");
+                        count = 2;
+                        $('#slideshow').children().eq(count).css("display", "flex");
+                    }
                 } else {
-                    console.log("wtf");
-                    $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
-                    $('#slideshow').children().eq(count).css("display", "none");
-                    count = 0;
-                    $('#slideshow').children().eq(count).css("display", "inline");
+                    if (count < $('#slideshow').children().length) {
+                        count++;
+                    } else {
+                        count = 2;
+                    }
                 }
             }, 5000);
         }
@@ -145,19 +153,32 @@
             </li>
         </ul>
     </div>
-
-    <div id="slideshow">
-        <div class="slide">
-            <article id="article">
-                "We Are A Small Company, We Are Yoy. Our Staff of 6 Are Aiming To Create
-                Interactive And Complex Websites Using Javascript, PHP, Jquery, And The
-                Latest CSS3."
-            </article>
-        </div>
-        <div class="slide">
-            <article id="article">
-                Lorem Ipsum
-            </article>
+    
+    <div>
+        <div id="slideshow">
+            <div id="left-control">
+                <img src="img/icons/ic_next_3x_re.png" />
+            </div>
+            <div id="right-control">
+                <img src="img/icons/ic_next_3x.png" />
+            </div>
+            <div class="slide">
+                <article id="article">
+                    <span>
+                        Guaranteed
+                    </span>u
+                </article>
+            </div>
+            <div class="slide">
+                <article id="article">
+                    <span>
+                        "We Are A Small Company, We Are Yoy. Our Staff of 6 Are Aiming To Create
+                    Interactive And Complex Websites Using Javascript, PHP, Jquery, And The
+                    Latest CSS3."
+                    </span>
+                    <img class="slideimg" src="img/test.jpg"/>
+                </article>
+            </div>
         </div>
     </div>
 </body>
