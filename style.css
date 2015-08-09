@@ -1,33 +1,46 @@
-body {
-    font-family: "Gadugi Regular", "Opensans", sans-serif;
+body, html {
+    font-family: "Opensans", sans-serif;
+    margin: 0;
+    color: #FFF;
 }
 
-.header {
+.nav-main .logo {
+    float: left;
+    width: 5%;
+    height: auto;
+    padding: 15px 30px;
+    line-height: 40px;
+}
+
+.nav-main {
+    width: 100%;
     background-color: #000;
-    opacity: 0.6;
-    margin: -20px -20px;
-    padding: 40px 30px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 70px;
+    color: #fff;
+    
 }
 
-    .header nav a {
-        color: #FFF;
-        text-decoration: none;
-        margin-left: 40px;
-    }
+.main > ul > li {
+    float: left;
+}
 
-    #items {
-        float: right;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+.nav-main > ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+}
 
-    #logo {
-        height: 50px;
-        width: auto;
-    }
+.nav-main a, a:link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px 0px;
+    margin-left: 60px;
+    color: #FFF;
+}
+
+.nav-main {
+    opacity: 0.6;
+}
+
+
