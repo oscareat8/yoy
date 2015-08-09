@@ -1,185 +1,41 @@
 ﻿<!DOCTYPE html>
+
+<!-- Design and Created by Oscar Wei and Christopher Zhou !-->
+
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <title>Yoy | Professional Website Development</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script>
-        var isOpened = false;
-        var count = 2;
-        $(document).ready(function () {
-            // run test on initial page load
-            checkSize();
-            startSlideShow();
-            // run test on resize of the window
-            $(window).resize(checkSize);
-        });
-
-        //Function to the css rule
-        function checkSize() {
-            if (Modernizr.mq('screen and (max-width: 900px)') && isOpened) {
-                console.log('helo from 3');
-            }
-
-            else if (Modernizr.mq('screen and (max-width: 900px)') && !isOpened) {
-                //from desktop to mobile
-                $('#nav').css("visibility", "hidden");
-                $('#nav').css("display", "none");
-                console.log('helo from 2');
-            }
-
-            else if ($(Modernizr.mq('screen and (min-width : 901px)') && isOpened)) {
-                //from mobile to desktop
-                $('.header').animate({
-                    height: '22px'
-                });
-                $('#nav').css("visibility", "visible");
-                $('#nav').css("display", "inline");
-                console.log('helo from 1');
-                isOpened = false;
-            }
-        }
-
-        function reveal() {
-            if ($('.box-shadow-menu').css("display") == "inline" && $('#nav').css("display") == "none") {
-                $('#nav').css("visibility", "visible");
-                $('.header').animate({
-                    height: '200px'
-                });
-                $('#nav').css("display", "inline");
-
-                isOpened = true;
-
-            } else if ($('#nav').css("visibility") == "visible") {
-                $('.header').animate({
-                    height: '22px'
-                });
-                $('#nav').css("visibility", "hidden");
-                $('#nav').css("display", "none");
-                isOpened = false;
-            }
-        }
-
-        function startSlideShow() {
-            $('#slideshow').children().eq(2).css("display", "inline");
-            console.log($('#slideshow').children());
-            setInterval(function () {
-                console.log("c: " + count);
-                if ($('#slideshow').children().eq(count).hasClass("slide")) {
-                    console.log($('#slideshow').children().eq(count).attr("class"));
-                    if (count < $('#slideshow').children().length-1) {
-                        $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
-                        $('#slideshow').children().eq(count).css("display", "none");
-                        ++count;
-                        $('#slideshow').children().eq(count).css("display", "flex");
-                    } else {
-                        console.log("wtf");
-                        $('#slideshow').children().eq(count).fadeOut(1000, "linear", null);
-                        $('#slideshow').children().eq(count).css("display", "none");
-                        count = 2;
-                        $('#slideshow').children().eq(count).css("display", "flex");
-                    }
-                } else {
-                    if (count < $('#slideshow').children().length) {
-                        count++;
-                    } else {
-                        count = 2;
-                    }
-                }
-            }, 5000);
-        }
-    </script>
+    <title>Yoy | Alpha Testing</title>
 </head>
+
 <body>
-
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
-    </div>
-
-
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/main.js"></script>
-
-
-    <div class="header">
-        <a href="#menu" class="box-shadow-menu" onclick="reveal()"></a>
-        <ul id="nav">
-            <li class=".item">
-                <a href="index.html">HOME</a>
-            </li>
-            <li class=".item">
+    <header class="header">
+        <nav>
+            <div id="items">
+                <img id="logo" src="img/Yoy_white.png" />
                 <a href="#">CAREERS</a>
-            </li>
-            <li class=".item">
-                <a href="blog.html">BLOG</a>
-            </li>
-            <li class=".item">
-                <a href="donate.html">DONATE</a>
-            </li>
-            <li class=".item">
+                <a href="#">BLOG</a>
+                <a href="#">DONATE</a>
                 <a href="#">GALLERY</a>
-            </li>
-            <li class=".item">
                 <a href="#">SHOP</a>
-            </li>
-            <li class=".item">
                 <a href="#">ABOUT US</a>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </nav>
+    </header>
     
-    <div>
-        <div id="slideshow">
-            <div id="left-control">
-                <img src="img/icons/ic_next_3x_re.png" />
-            </div>
-            <div id="right-control">
-                <img src="img/icons/ic_next_3x.png" />
-            </div>
-            <div class="slide">
-                <article id="article">
-                    <span>
-                        Guaranteed
-                    </span>u
-                </article>
-            </div>
-            <div class="slide">
-                <article id="article">
-                    <span>
-                        "We Are A Small Company, We Are Yoy. Our Staff of 6 Are Aiming To Create
-                    Interactive And Complex Websites Using Javascript, PHP, Jquery, And The
-                    Latest CSS3."
-                    </span>
-                    <img class="slideimg" src="img/test.jpg"/>
-                </article>
-            </div>
-        </div>
-    </div>
+
 </body>
+
+
+
+
+
+
+
+
+
+
 </html>
