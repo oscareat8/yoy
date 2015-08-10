@@ -1,7 +1,7 @@
 body, html {
     font-family: "Opensans", sans-serif;
     margin: 0;
-    color: #FFF;
+    
 }
 
 /* navbar */
@@ -38,7 +38,7 @@ body, html {
     display: inline-block;
     padding: 25px 0px;
     margin-left: 60px;
-    color: #FFF;
+    color: #fff;
 }
 
 .nav-main {
@@ -46,7 +46,58 @@ body, html {
 }
 
 .nav-main a:hover {
-    color:aqua;
+    color: #3fb1ec;
 }
+
+
+
+
+/* innovate */
+
+
+
+.innovate {
+    margin: -140px 0px;;
+    background: #ccc;
+    height: 700px;
+    background-image: url(img/entrepreneur-593358_1920.jpg);
+    text-align: center;
+    color: #fff;
+}
+
+.innovate h1 {
+    padding-top: 230px;
+    font-size: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
