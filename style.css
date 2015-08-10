@@ -4,11 +4,13 @@ body, html {
     color: #FFF;
 }
 
+/* navbar */
+
 .nav-main .logo {
     float: left;
     width: 5%;
     height: auto;
-    padding: 15px 30px;
+    padding: 6px 30px;
     line-height: 40px;
 }
 
@@ -41,6 +43,10 @@ body, html {
 
 .nav-main {
     opacity: 0.6;
+}
+
+.nav-main a:hover {
+    color:aqua;
 }
 
 
