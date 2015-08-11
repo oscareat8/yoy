@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <!-- Design and Created by Oscar Wei and Christopher Zhou !-->
 
@@ -9,6 +9,24 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>Yoy | Alpha Testing</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($(window).height() > $(window).width()) {
+                $("#slide1").css("height", $(window).height());
+            } else {
+                $("#slide1").css("width", $(window).width());
+            }
+        });
+        $(window).resize(function () {
+            if ($(window).height() > $(window).width()) {
+                $("#slide1").css("height", $(window).height());
+            } else {
+                $("#slide1").css("width", $(window).width());
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -17,25 +35,28 @@
             <div class="logo"><img src="img/Yoy_white.png" /></div>
             
             <ul>
-                <a href="#"><li>ABOUT US</li></a>
-                <a href="#"><li>SHOP</li></a>
-                <a href="#"><li>GALLERY</li></a>
-                <a href="#"><li>DONATE</li></a>
-                <a href="#"><li>BLOG</li></a>
-                <a href="#"><li>CAREERS</li> </a>              
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li> <a href="#">DONATE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CAREERS</a></li>  
             </ul>
             
         </nav>
     </header>
-    
-    <article class="innovate">
-        <h1>We Innovate</h1>
-    
-    
-    
-    </article>
-    
 
+    <div id="wrapper">
+        <article class="innovate">
+            <img id="slide1" src="img/entrepreneur-593358.jpg" />
+            <h1>We Innovate</h1>
+        </article>
+        <article class="kitchen">
+            <img id="" src="img/kitchen-731351.jpg" />
+            <h1>Yoy Web Design</h1>
+        </article>
+
+    </div>
 </body>
 
 
