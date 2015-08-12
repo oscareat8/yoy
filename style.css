@@ -95,11 +95,11 @@ body, html {
 
         .alternate article h1 {
             padding-top: 230px;
-            font-size: 3vw;
+            font-size: 4vw;
         }
 
         .alternate article p {
-            font-size: 1.5vw;
+            font-size: 2vw;
         }
 
     .alternate img {
@@ -120,17 +120,17 @@ body, html {
   font-family: "Arial";
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #fff;
-  height: 36px;
-  line-height: 36px;
+  border: 4px solid #fff;
+  height: 64px;
+  line-height: 64px;
   color: #fff;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: 10px;
   -webkit-background-clip: padding-box;
-  -moz-border-radius: 5px;
+  -moz-border-radius: 10px;
   -moz-background-clip: padding;
-  border-radius: 5px;
+  border-radius: 10px;
   background-clip: padding-box;
-  font-size: 1em;
+  font-size: 40px;
   padding: .5em 1.5em;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
