@@ -40,13 +40,19 @@ body, html {
 /* innovate */
 
 #wrapper {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
+
 .innovate {
     text-align: center;
     color: #fff;
     display: flex;
     flex-direction: column;
+    position: relative;
+
 }
 
     .innovate h1 {
@@ -54,7 +60,7 @@ body, html {
         font-size: 80px;
     }
 
-    .innovate img {
+    .innovate #slide1 {
         position: absolute;
         top: 0;
         left: 0;
@@ -63,20 +69,47 @@ body, html {
         width: 100vw;
     }
 
-.kitchen {
+    #down_arrow {
+        position: absolute;
+        bottom: 0;
+        height: 114px;
+        width: 114px;
+    }
+
+.alternate {
     text-align: center;
     color: #fff;
     display: flex;
     flex-direction: column;
+    clear: both;
 }
 
-    .kitchen h1 {
-        padding-top: 230px;
-        font-size: 80px;
+    .alternate article {
+        opacity: 1;
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+        background-color: #000000;
     }
 
-    .kitchen img {
-        flex-direction: column;
-        width: 300px;
+        .alternate article h1 {
+            padding-top: 230px;
+            font-size: 3vw;
+        }
+
+        .alternate article p {
+            font-size: 1.5vw;
+        }
+
+    .alternate img {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        /*flex-direction: column;*/
+        width: 100vw;
     }
 
+#kitchtext {
+    padding-left: 18vw;
+}
