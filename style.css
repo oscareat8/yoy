@@ -11,6 +11,10 @@ body, html {
 
 /* navbar */
 
+.login {
+    float:right;
+}
+
 .nav-main {
     width: 100vw;
     display: flex;
