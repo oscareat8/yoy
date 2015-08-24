@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <!-- Design and Created by Oscar Wei and Christopher Zhou !-->
 
@@ -13,7 +13,28 @@
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.smooth-scroll.js"></script>
     <script>
-    $(window).load(function () {
+        function reveal() {
+            if ($('#menu img').css("display") == "block" && $('.nav-main ul').css("display") == "none") {
+                $('.nav-main ul').css("visibility", "visible");
+                $('.nav-main ul').css("display", "block");
+                $('.header').animate({
+                    height: '300px'
+                });
+                
+
+                isOpened = true;
+
+            } else if ($('.nav-main ul').css("visibility") == "visible") {
+                $('.header').animate({
+                    height: '80px'
+                });
+                $('.nav-main ul').css("visibility", "hidden");
+                $('.nav-main ul').css("display", "none");
+                isOpened = false;
+            }
+        }
+
+        $(window).load(function () {
             $(".innovate").css("height", $(window).height());
             $(".innovate #slide1").css("height", $(window).height());
             $(".innovate #slide1").css("width", $(".innovate img").width());
@@ -68,10 +89,10 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-main">
+    <header class="header">
+        <div class="nav-main">
+            <div id="menu"><img src="img/menu.png" onclick="reveal()"/></div>
             <div class="logo"><img src="img/Yoy_white.png" /></div>
-
             <ul>
                 <li><a href="index.html">ABOUT</a></li>
                 <li><a href="#">SHOP</a></li>
@@ -81,7 +102,7 @@
                 <li><a href="#">CAREERS</a></li>
             </ul>
 
-        </nav>
+        </div>
     </header>
 
     <div id="wrapper">
