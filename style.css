@@ -7,6 +7,7 @@ body, html {
     font-family: "Gadugi","Opensans", sans-serif;
     margin: 0;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 /* navbar */
@@ -60,6 +61,7 @@ body, html {
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
 }
 
@@ -80,8 +82,8 @@ body, html {
 #down_arrow {
     position: absolute;
     bottom: 0;
-    height: 114px;
-    width: 114px;
+    height: 8vh;
+    width: 8vh;
 }
 
 .alternate {
@@ -173,7 +175,7 @@ body, html {
     width: 20vh;
     line-height: 3vh;
     color: #fff;
-    font-size: 3vh;
+    font-size: 1.5vh;
     padding: .5em 1.5em;
 }
 

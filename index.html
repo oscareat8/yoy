@@ -58,6 +58,7 @@
                 });
             });
             $(".innovate").css("height", $(window).height());
+            $(".innovate").css("width", $(window).width());
             $(".innovate #slide1").css("height", $(window).height());
             $(".innovate #slide1").css("width", $(".innovate img").width());
             if ($(window).height() > $(window).width()) {
@@ -67,7 +68,9 @@
             }
         });
         $(window).resize(function () {
+            console.log($(window).width())
             $(".innovate").css("height", $(window).height());
+            $(".innovate").css("width", $(window).width());
             $(".innovate #slide1").css("height", $(window).height());
             $(".innovate #slide1").css("width", $(".innovate img").width());
 
@@ -113,7 +116,9 @@
             <a href="#" class="ghost-btn">LEARN MORE</a>
             </p>
             <a href="#bg_kitch">
-                <img id="down_arrow" src="img/icons/ic_down.png" />
+                <center>
+                    <img id="down_arrow" src="img/icons/ic_down.png" />
+                </center>
             </a>
         </div>
         <div class="alternate">
@@ -138,7 +143,7 @@
             <img id="bg_work" src="img/workstation-405768.jpg" />
             <article id="worktext">
                 <h1>Contact Us</h1>
-                <p>Feel free to contact us when every you need. <br />Your satifaction is out first priority.</p>
+                <p>Feel free to contact us when ever you need. <br />Your satifaction is out first priority.</p>
                 <p><a href="#" class="ghost-btn">CONTACT INFO</a></p>
             </article>
         </div>
