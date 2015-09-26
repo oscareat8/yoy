@@ -1,7 +1,46 @@
 .carousel-inner .item img {
-    height: 600px;
+    height: 400px;
     margin: 0 auto;
+    width: 100vw;
 }
 .carousel-caption {
     font-size: 20pt;
 }
+
+@media only screen and (min-width : 150px) and (max-width : 500px) {
+    .carousel-inner .item img {
+        height: 10%;
+        width: 100%;
+    }
+}
+
+/*.flex-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.row {
+    width: auto;
+    
+    
+}
+.flex-item {
+    display: inline-block;
+    background-color: tomato;
+    padding: 5px;
+    width: auto;
+    height: 400px;
+    margin: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}*/
