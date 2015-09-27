@@ -14,6 +14,15 @@
     }
 }
 
+.box h2, .box {
+    /*margin-top: 80px;
+    margin-left: 80px;*/
+    padding: 0 20px;;
+    font-size:110%;
+    margin: 2% 3%;
+    display:flex;
+}
+
 /*.flex-container {
     height: 100%;
     display: -webkit-box;
